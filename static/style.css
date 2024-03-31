@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+#quality-label {
+    font-weight: 400;
+    margin-top: 10px;
+    color:rgb(103, 102, 102);
+    font-size: 15px;
+}
+
+.quality {
+    display: grid;
+    grid-template-columns: 10px 50px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #1e90ff;
+    opacity: 0.8;
+}
+
+#submit:active {
+    background-color: #1e90ff;
+    opacity: 0.8;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #c5c5c5;
+    margin-bottom: 5px;
+}
+
+input[type="text"]:hover, input[type="number"]:hover {
+    border: 2px solid #a4d0fc;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border: 2px solid #1e90ff;
+}
+
+.result {
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #88a3be;
+}

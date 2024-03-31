@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MyAnimeDownloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_dark.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="title">MyAnimeDownloader</h1>
+        </div>
+        <div class="content">
+            <div class="form">
+                <form action="/download" method="post" id="anime-form">
+
+                    <input type="text" name="anime-name" placeholder="Anime Name" id="anime-name" required>
+
+                    <label for="quality" id="quality-label">Quality</label>
+                    <div class="quality">
+                        <input type="radio" name="quality" value="360p">
+                        <label for="360p">360p</label>
+                        <input type="radio" name="quality" value="480p">
+                        <label for="480p">480p</label>
+                        <input type="radio" name="quality" value="720p" checked>
+                        <label for="720p">720p</label>
+                        <input type="radio" name="quality" value="1080p">
+                        <label for="1080p">1080p</label>
+                    </div>
+
+                    <div class="range">
+                        <input type="number" name="start-episode" placeholder="Start Episode" id="start-episode" required>
+                        <input type="number" name="end-episode" placeholder="End Episode" id="end-episode" required>
+                    </div>
+
+                    <input type="submit" value="Download" id="submit">
+                </form>
+            </div>
+            <div class="result">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
